@@ -1,0 +1,134 @@
+$primary: #1b5e20;
+$dark: #0d1f0f;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+:root {
+    --primary: #1b5e20;
+    --dark-green: #0d1f0f;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1498049794561-7780e7231661?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+.testimonial-card {
+    transition: transform 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.cta-section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+
+footer {
+    padding: 40px 0;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: #0d4112;
+    border-color: #0d4112;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.navbar-dark {
+    background-color: var(--dark-green) !important;
+}
+
+.bg-dark {
+    background-color: var(--dark-green) !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 76px;
+}
+
+.product-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+    text-align: center;
+}
+
+.product-card:hover .product-overlay {
+    opacity: 1;
+}
+
+.toast-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1050;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+}
+
+.carousel-item {
+    padding: 20px 0;
+}
+
+.password-feedback {
+    display: none;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
